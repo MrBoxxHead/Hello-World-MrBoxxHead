@@ -1,3 +1,8 @@
+/**
+hello_matrix.cpp
+Colton Fowler
+Hello, world for github
+*/
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -7,9 +12,9 @@
 using namespace std;
 
 #ifdef _WIN32
-    #define CLEAR "cls"
+    #define CLEAR "cls" /*Win*/
 #else
-    #define CLEAR "clear"
+    #define CLEAR "clear" /*Linux*/
 #endif
 
 int main() {
@@ -31,7 +36,7 @@ int main() {
         cout << msg.substr(0, i + 1) << endl;
 
         this_thread::sleep_for(chrono::milliseconds(200));
-        system(CLR); // for Windows and Linux
+        system(CLEAR); // for Windows and Linux
     }
 
     cout << msg << endl;
