@@ -31,7 +31,7 @@ int main() {
         cout << msg.substr(0, i + 1) << endl;
 
         this_thread::sleep_for(chrono::milliseconds(200));
-        system(CLEAR); // for Windows and Linux
+        system(CLR); // for Windows and Linux
     }
 
     cout << msg << endl;
